@@ -17,12 +17,13 @@ prevBtn.addEventListener("click", function () {
     carousel();
 });
 
-prevBtn.style.display = "none";
 
 function carousel() {
     slides.forEach(function (slide) {
 
         // working with slides
+        // prevBtn.style.display = "none";
+
         if (counter === slides.length) {
             counter = 0;
         }
@@ -31,6 +32,8 @@ function carousel() {
         }
 
         // working with buttons
+        
+        // prevBtn.style.display = "none";
         // if (counter < slides.length - 1) {
         //     nextBtn.style.display = "block";
         // }
