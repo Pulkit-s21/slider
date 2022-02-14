@@ -21,7 +21,7 @@ prevBtn.style.display = "none";
 
 function carousel() {
     slides.forEach((slide) => {
-
+      
         // working with slides
 
         // prevBtn.style.display = "none";
@@ -36,14 +36,11 @@ function carousel() {
 
         if (counter < slides.length - 1) {
             nextBtn.style.display = "block";
-        }
-        else {
+        } else {
             nextBtn.style.display = "none";
-        }
-        if (counter > 0) {
+        } if (counter > 0) {
             prevBtn.style.display = "block";
-        }
-        else {
+        } else {
             prevBtn.style.display = "none"; 
         }
         // "-" cz we need to move them to the left
