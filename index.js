@@ -20,8 +20,8 @@ prevBtn.addEventListener("click", ()=> {
 prevBtn.style.display = "none";
 
 function carousel() {
-    slides.forEach((slide)=> {
-
+    slides.forEach((slide) => {
+      
         // working with slides
 
         // prevBtn.style.display = "none";
