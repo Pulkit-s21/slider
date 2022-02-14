@@ -8,11 +8,11 @@ slides.forEach(function (slide, index) {
 
 let counter = 0;
 
-nextBtn.addEventListener("click", function () {
+nextBtn.addEventListener("click", ()=> {
     counter++;
     carousel();
 });
-prevBtn.addEventListener("click", function () {
+prevBtn.addEventListener("click", ()=> {
     counter--;
     carousel();
 });
@@ -20,7 +20,7 @@ prevBtn.addEventListener("click", function () {
 prevBtn.style.display = "none";
 
 function carousel() {
-    slides.forEach(function (slide) {
+    slides.forEach((slide)=> {
 
         // working with slides
 
@@ -36,14 +36,11 @@ function carousel() {
 
         if (counter < slides.length - 1) {
             nextBtn.style.display = "block";
-        }
-        else {
+        } else {
             nextBtn.style.display = "none";
-        }
-        if (counter > 0) {
+        } if (counter > 0) {
             prevBtn.style.display = "block";
-        }
-        else {
+        } else {
             prevBtn.style.display = "none"; 
         }
         // "-" cz we need to move them to the left
