@@ -8,11 +8,11 @@ slides.forEach(function (slide, index) {
 
 let counter = 0;
 
-nextBtn.addEventListener("click", function () {
+nextBtn.addEventListener("click", ()=> {
     counter++;
     carousel();
 });
-prevBtn.addEventListener("click", function () {
+prevBtn.addEventListener("click", ()=> {
     counter--;
     carousel();
 });
@@ -20,7 +20,7 @@ prevBtn.addEventListener("click", function () {
 prevBtn.style.display = "none";
 
 function carousel() {
-    slides.forEach(function (slide) {
+    slides.forEach((slide) => {
 
         // working with slides
 
